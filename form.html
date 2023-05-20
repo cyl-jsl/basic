@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        fieldset{
+            width: 500px;
+            margin: 15px auto;
+            border: 1px solid coral;
+            border-radius: 10px;
+        }
+        legend{
+            margin: auto;
+            border: 1px solid coral;
+            border-radius: 10px;
+            padding: 5px 15px;
+            color: #fff;
+            background-color: #459976f3;
+        }
+        .st{
+            width: 450px;
+            margin: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+        .title{
+            float: left;
+            width: 100px;
+            text-align: right;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="">username1111</label>
+        <input type="text" placeholder="guest" size="30"> <br>
+        <label for="">password</label>
+        <input type="password" placeholder="4-12 charactors" size="40" maxlength="12"> <br>
+        <label for="memo">意見:</label>
+        <textarea cols="50" rows="10" id="memo" name="memo" ></textarea> <br>
+        <label for="">性別</label>
+        <input type="radio" name="gender" id="" value="male">男
+        <input type="radio" name="gender" id="" value="female">女 <br>
+         <!--value不同即單選  -->
+         <label for="">興趣</label>
+         <input type="checkbox" name="hobby" id="">A
+         <input type="checkbox" name="hobby" id="">B
+         <input type="checkbox" name="hobby" id="">C
+         <input type="checkbox" name="hobby" id="">D <br>
+         <label for="">地址</label>
+         <select name="" id="">
+            <option value="TPE">台北市</option>
+            <option value="">新北市</option>
+            <option value="">桃園市</option>
+            <option value="">新竹縣</option>
+         </select> <br>
+         <input type="file" name="" id=""> <br>
+         <input type="reset" value="清除">
+         <input type="submit" value="送出">
+    </form>
+    <br>
+    <!-- --------------------------------------------------------------- -->
+    <form action="">
+        <fieldset>
+            <legend>個人資料<em>(必填)</em></legend>
+            <!-- .st*N:逐項區塊 -->
+            <div class="st">
+                <label for="" class="title">username1111</label>
+                <input type="text" placeholder="guest" size="30">
+            </div>
+            <div class="st">
+                <label for="" class="title">password</label>
+                <input type="password" placeholder="4-12 charactors" size="40" maxlength="12">
+            </div>
+            <div class="st">
+                <label for="memo" class="title">意見:</label>
+                <textarea cols="40" rows="10" id="memo" name="memo" ></textarea> 
+            </div>
+            <div class="st">
+                <label for="" class="title">性別</label>
+                <input type="radio" name="gender" id="" value="male">男
+                <input type="radio" name="gender" id="" value="female">女
+            </div>
+            <div class="st">
+                <label for="" class="title">興趣</label>
+                <input type="checkbox" name="hobby" id="">A
+                <input type="checkbox" name="hobby" id="">B
+                <input type="checkbox" name="hobby" id="">C
+                <input type="checkbox" name="hobby" id="">D
+            </div>
+            <div class="st">
+                <label for="" class="title">地址</label>
+                    <select name="" id="">
+                        <option value="TPE">台北市</option>
+                        <option value="">新北市</option>
+                        <option value="">桃園市</option>
+                        <option value="">新竹縣</option>
+                </select>
+            </div>
+            <div class="st">
+                <label for="" class="title">檔案</label>
+                <input type="file" name="" id="">
+            </div>
+            <div class="st">
+                <label for="" class="title">&</label>
+                <input type="reset" value="清除">
+                <input type="submit" value="送出">
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+</html>
