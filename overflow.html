@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 300px;
+            border: 1px solid #f00;
+            float: left;
+        }
+        .hidden{
+            overflow: hidden;
+        }
+        .scroll{
+            overflow: scroll;
+        }
+        .auto{
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- 溢出默認 -->
+    <div class="visible">
+        <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe cum consequuntur optio quibusdam commodi, quod, praesentium placeat repudiandae perspiciatis corrupti aliquam nisi deserunt animi, nesciunt porro quaerat neque accusantium vitae.</span><span>Placeat molestias ullam, ad voluptate nulla repudiandae assumenda harum facere possimus ut! Ratione, magni cupiditate magnam sit nostrum modi esse dolorum vel quo mollitia qui, quis, quibusdam nesciunt eaque placeat.</span></p>
+    </div>
+
+    <!-- 溢出裁剪(被遮住的內容無法檢視) -->
+    <div class="hidden">
+        <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut saepe illum minus ipsam esse blanditiis officia exercitationem quisquam distinctio. Dolor magnam fugit recusandae delectus dicta atque optio sint eveniet aut.</span><span>Illum provident ut tempora ipsum neque quod ex, sequi, atque voluptates libero sint nulla cumque necessitatibus laboriosam alias, deleniti mollitia? Minus tempora at aliquam temporibus, repudiandae nisi nostrum exercitationem enim?</span></p>
+    </div>
+
+    <div class="scroll">
+    <!-- 溢出加入滾輪(必定顯示)以可檢視 -->
+        <p><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo non deleniti tempora ratione delectus voluptas iusto expedita similique nobis modi aut id perferendis error exercitationem asperiores laborum veniam, facere reprehenderit!</span><span>Voluptatem, eos doloremque dolores fuga, earum similique magni ducimus error in distinctio quia quo accusamus, id reiciendis et provident labore delectus? Commodi laudantium eum officiis explicabo tempore impedit id ducimus.</span></p>
+    </div>
+
+    <div class="auto">
+        <!-- 溢出加入滾輪以可檢視，並偵測預設 -->
+        <P><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe recusandae accus antium libero? Illo, repellat illum? Error ipsa officiis ea, non, nisi consectetur necessitatibus magnam possimus officia nesciunt temporibus, unde a!</span><span>In deserunt ad, ex totam, non sint fuga repellendus quidem, dolor amet eveniet repellat numquam enim tempore quod voluptas mollitia! Dicta laboriosam optio quidem consequatur esse, repellendus ducimus rem explicabo.</span></P>
+    </div>
+</body>
+</html>

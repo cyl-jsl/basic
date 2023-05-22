@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            /* 萬用符，全部套用，所有預設值先歸零 */
+            margin: 0;
+            padding: 0;
+        }
+        .wrap{
+            width: 960px;
+            margin: auto;
+            background-color: #ccc;
+        }
+        header{
+            background-color: #f6eba7;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;   
+        }
+        section{
+            width: 700px;
+            background-color: #75c5cb;
+            height: 500px;
+            float: left;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        aside{
+            width: 260px;
+            height: 500px;
+            background-color: #887cab;
+            float: right;
+        }
+        footer{
+            height: 100px;
+            background-color: #5eac8e;
+            clear: both;
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <h1>
+                我的網站名稱
+            </h1>
+        </header>
+        <section>
+            <article>
+                <h2>
+                我的網站標題  
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum harum dicta ipsam quaerat error consectetur repellendus dolorem quas ab provident asperiores, tempora minima sed aut eius porro placeat voluptatibus magnam?
+                </p>
+            </article>
+        </section>
+        <aside>
+            <ul>
+                <li>item01</li>
+                <li>item02</li>
+                <li>item03</li>
+                <li>item04</li>
+                <li>item05</li>
+            </ul>
+        </aside>
+        <footer>
+            <p> 
+                2023 &copy;
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

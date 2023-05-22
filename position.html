@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 500px;
+            height: 500px;
+            background-color: #f7e8c4;
+            margin: auto;
+            position: relative;
+        }
+        .relative{
+            width: 100px;
+            height: 100px;
+            background-color: #ce9191a1;
+            position: relative;
+            top: 110px;
+            left: 60px;
+            /* relative為母層座標之位置 */
+            z-index: 999;
+        }
+        .absolute{
+            width: 100px;
+            height: 100px;
+            background-color: #91bdce;
+            position: absolute;
+            top: 100px;
+            left: 50px;
+            /* absolute為瀏覽器視窗座標之位置 */
+        }
+        .fixed{
+            width: 60px;
+            height: 60px;
+            background-color: #368677;
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="relative"></div>
+        <div class="absolute"></div>
+        <div class="fixed">
+            <p>top</p>
+        </div>
+    </div>
+</body>
+</html>
